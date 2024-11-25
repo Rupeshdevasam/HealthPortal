@@ -72,11 +72,14 @@
                 }}</span>
 
                 <div class="col-lg-3 col-md-4 col-6 mx-auto">
-                  @if (submissionInProgress) {
-                  <button type="submit" class="form-control" id="submit-button">
+                  <button
+                    type="submit"
+                    class="form-control"
+                    id="submit-button"
+                    [disabled]="submissionInProgress"
+                  >
                     Book Now
                   </button>
-                  }
                 </div>
               </div>
             </form>
